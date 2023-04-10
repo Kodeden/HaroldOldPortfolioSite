@@ -1,0 +1,252 @@
+<head>
+  <title>Harold Tourjee's Online Resume and Portfolio</title>
+  <link href='style.css' rel='stylesheet'>
+  
+  <meta name="keywords" content="Harold, Tourjee, Harold Tourjee III",  />
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<div id='desktop'>
+  <div id='table'><div id='table-face'></div></div>
+  <div id='clockframe'>
+    <div id='clockface'>
+      <div class='hand' id='second'></div>
+      <div class='hand' id='hour'></div>
+      <div class='hand' id='minute'></div>
+    </div>
+  </div>
+  <nav id="menu">
+    <label id="labellybit" for="toggle"></label>
+    <input id="toggle" type="checkbox" />
+    <div class="hamcontainer">
+    <ul class='navbar'>
+      <a href="#" onclick="home()"><li class='navbar'><p class='navbar'>Go Home</p></li></a>
+      <a href="#" onclick="about()"><li class='navbar'><p class='navbar'>Talk About Harold</p></li></a>
+      <a href="#" onclick="resume()"><li class='navbar'><p class='navbar'>View Harold's Resume</p></li></a>
+      <a href="#" onclick="portfolio()"><li class='navbar'><p class='navbar'>Check Harold's Portfolio</p></li></a>
+      <a href="#" onclick="contactInfo()"><li class='navbar'><p class='navbar'>Contact Harold</p></li></a>
+    </ul>
+    <div class="hamicon">
+      <span class="hamburgerpixel"></span>
+      <span class="hamburgerpixel down1"></span>
+      <span class="hamburgerpixel down2"></span>
+      <span class="hamburgerpixel down1"></span>
+      <span class="hamburgerpixel"></span>
+      <span class="hamburgerpixel up2"></span>
+      <span class="hamburgerpixel up1"></span>
+      <span class="hamburgerpixel"></span>
+      <span class="hamburgerpixel down1"></span>
+      <span class="hamburgerpixel down2"></span>
+      <span class="hamburgerpixel"></span>
+      <span class="hamburgerpixel up1"></span>
+      <span class="hamburgerpixel up2"></span>
+      <span class="hamburgerpixel up1"></span>
+      <span class="hamburgerpixel"></span>
+    </div>
+  </div>  
+  </nav>
+  <div id='subnav'>
+    <ul class='wsmu'>
+      <a href="#" onclick="F5()"><li class='wsmu'><p class='wsmu'>wait</p></li></a>
+      <li class='wsmu'><p class='wsmu'>save</p></li>
+      <li class='wsmu'><p class='wsmu'>map</p></li>
+      <a href="#" onclick="undo()"><li class='wsmu'><p class='wsmu'>undo</p></li></a>
+    </ul>
+    <div id='compass'>
+      <div class='arrow' id='north'></div>
+      <a href="#" class='nohand' onclick="showframe()"><div class='arrow activearrow nohand' id='north-east'></div></a>
+      <div class='arrow' id='east'></div>
+      <div class='arrow' id='south-east'></div>
+      <div class='arrow' id='south'></div>
+      <a href="#" class='nohand' onclick="hideframe()"><div class='arrow nohand' id='south-west'></div></a>
+      <div class='arrow' id='west'></div>
+      <div class='arrow' id='north-west'></div>
+      <div class='arrow' id='up'></div>
+      <div class='arrow' id='down'></div>
+    </div>
+  </div>
+  <div id='iobar'>
+    <div id='output'>
+      <p id='iocontent' class='iobar'>You are at your desk considering Harold and his portfolio. Before you is your computer in sleep mode. Please click on a command from the menu.</p>
+    </div>
+    <div id='input'></div>
+  </div>
+  <div id="ballcontainer">
+    <div id='shadow'>
+      <a class='nohand' href="#" onmouseover="roll()">
+        <div id='ball'></div>
+      </a>
+    </div>
+  </div>
+  <div id='computerbox'>
+    <div id='computershadow'></div>
+    <div id='computer'>
+      <div id='computerpower'>
+        <div class=computersleep id='computerpowero'></div>
+        <div class=computersleep id='computerpoweri'></div>
+      </div>
+      <ul id='vents'>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+        <li class="vent"></li>
+      </ul>
+      <div id='computertop'></div><div id='computerside'></div>
+      <div id="floppydrive" >
+        <div id="floppydrivedivide"></div>
+        <div id="floppyslotsquare"></div>
+        <div id="floppyslot"></div>
+        <div id="floppylockcircle">
+          <div id="floppylockstick"></div>
+        </div>
+      </div>
+      <div id='monitor'>
+        <div id='monitorlegside'></div>
+        <div id='monitorleg'></div><div id='monitorface'></div>
+        <iframe scrolling='yes' id='screen'></iframe>
+        <div id='monitorled'></div>
+        <div id='monitorback1'>
+          <div id='monitorback2'></div>
+        </div>
+        <div id='monitortop'></div>
+        <div id='monitorside'></div>
+      </div>
+    </div>
+    <div id='keyboard'>
+      <div id='keyboardshadow'></div>
+      <div id='keyboardside'></div>
+      <div id='keyboardframe'>
+        <ul class='keyrow'>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+        </ul>
+        <ul class='keyrow'>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key transparent"></li>
+          <li class="key transparent"></li>
+          <li class="key transparent"></li>
+          <li class="key transparent"></li>
+          <li class="key transparent"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+        </ul>
+        <ul class='keyrow'>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key transparent"></li>
+          <li class="key transparent"></li>
+          <li class="key"></li>
+          <li class="key transparent"></li>
+          <li class="key transparent"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+        </ul>
+        <ul class='keyrow'>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li id='spacebar' class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key transparent"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key transparent"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+          <li class="key"></li>
+        </ul>
+        <div id='keyboardface'></div>
+      </div>
+    </div>
+  </div>
+
+  <div id=framemonitor>
+    <iframe scrolling='yes' id=framescreen></iframe>
+    <div id=frameled></div>
+  </div>
+  
+</div>
+</body>

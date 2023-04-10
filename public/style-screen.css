@@ -1,0 +1,188 @@
+p, li {
+	background-color: transparent;
+	color: white;
+	margin: 3%;
+	font-size: 20;
+	font-family: Garamond;
+}
+
+body {
+	background-image: radial-gradient(circle at 15% 15%, #222222, #111111);
+	height: 95%;
+	overflow: hidden;
+}
+
+h1 {
+	background-color: transparent;
+	color: white;
+	margin: 3%;
+	text-decoration: underline;
+	font-size: 32;
+	font-family: Garamond;
+}
+
+#court{
+	width: 550px;
+	height: 200px;
+	border: 4px dotted lightgray;
+	margin: 40px auto;
+	position: relative;
+}
+
+#pongball {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background-color: lightgray;
+	border-radius: 50%;
+	transform: translate3d(10px,0,0);
+	animation: leftright 4s infinite linear
+}
+
+#ponghorizontal {
+	position: relative;
+	width: 550px;
+	height: 20px;
+	top: calc(50% - 10px);
+	animation: updown 4.6s infinite linear;
+}
+
+@keyframes leftright {
+	0%,100% {transform: translate3d(10px,0,0)}
+	50% {transform: translate3d(520px,0,0)}
+}
+
+@keyframes updown {
+	0%,50%,100% {transform: translate3d(0,0,0)}
+	25% {transform: translate3d(0,92px,0)}
+	75% {transform: translate3d(0,-92px,0)} 
+}
+
+#player1, #player2 {
+	background-color: lightgray;
+	position: absolute;
+	width: 7px;
+	height: 44px;
+	margin-top: -12px;
+	animation: twitchy 4s infinite linear; 
+}
+
+#player2{
+	left:538px;
+}
+
+#player1{
+	left:4px;
+	animation-delay: 2s;
+}
+
+@keyframes twitchy {
+	0%,
+	100% {
+	  transform: translate3d(0, 0px, 0);
+	}
+	20% {
+	  transform: translate3d(0, 45px, 0);
+	}
+	44% {
+	  transform: translate3d(0, -25px, 0);
+	}
+	46% {
+	  transform: translate3d(0, 15px, 0);
+	}
+	48% {
+	  transform: translate3d(0, -15px, 0);
+	}
+	50% {
+	  transform: translate3d(0, 0px, 0);
+	}
+	70% {
+	  transform: translate3d(0, -60px, 0);
+	}
+	85% {
+	  transform: translate3d(0, 30px, 0);
+	}
+	95% {
+	  transform: translate3d(0, -30px, 0);
+	}
+  }
+
+@media screen and (min-width:240px) and (max-width:480px), 
+   screen and (min-device-width:240px) and (max-device-width:480px)
+{
+	h1 {
+		font-size: 64;
+	}
+	p, li {
+		font-size: 40;
+		margin-bottom: 10%;
+	}
+	div {
+		font-size: 40;
+	}
+	
+	#court{
+		width: 1000px;
+		height: 400px;
+		margin: 230px auto;
+	}
+	#pongball {
+		width: 40px;
+		height: 40px;
+		transform: translate3d(10px,0,0);
+	}
+	#ponghorizontal {
+		width: 1000px;
+		height: 40px;
+		top: calc(50% - 20px);
+	}
+	@keyframes leftright {
+		0%,100% {transform: translate3d(10px,0,0)}
+		50% {transform: translate3d(960px,0,0)}
+	}
+	@keyframes updown {
+		0%,50%,100% {transform: translate3d(0,0,0)}
+		25% {transform: translate3d(0,190px,0)}
+		75% {transform: translate3d(0,-190px,0)} 
+	}
+	#player2{
+		left: 988px;
+	}
+	
+	#player1, #player2 {
+		width: 14px;
+		height: 88px;
+	}
+	.project {
+		width: 260px;
+		height: 180px;
+	}
+	.sourcecode {
+		width: 260px;
+		height: 90px;
+	}
+}
+@media screen and (min-width:781px) and (max-width:1000px) and (orientation: landscape), 
+   screen and (min-device-width:781px) and (max-device-width:1000px)
+   and (orientation: landscape)
+{
+	div, p, li {
+		font-size: 40;
+	}
+	
+	h1 {
+		font-size: 64;
+	}
+
+	.project {
+		width: 260px;
+		height: 180px;
+	}
+	.sourcecode {
+		width: 260px;
+		height: 90px;
+	}
+	#ponghorizontal {
+		top: calc(50% - 10px);
+	}
+}
